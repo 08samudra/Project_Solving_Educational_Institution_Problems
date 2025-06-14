@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # === Load model & data ===
-df = pd.read_csv("data_preprocessed.csv")
-model = joblib.load("best_random_forest.pkl")
-feature_names = joblib.load("rf_feature_names.pkl")
+df = pd.read_csv("datasets/data_preprocessed.csv")
+model = joblib.load("models/best_random_forest.pkl")
+feature_names = joblib.load("models/rf_feature_names.pkl")
 
 st.set_page_config(page_title="🎓 Dashboard Prediksi Dropout", layout="wide")
 
@@ -23,7 +23,8 @@ menu = st.sidebar.radio("📂 Navigasi Menu", [
 
 # ========== MENU 1 ==========
 if menu == "1. Distribusi Data":
-    st.title("📊 1. Distribusi Data Mahasiswa")
+    st.title("🎓 Jaya Jaya Institute – Analisis & Visualisasi Prediktif")
+    st.title("📊 Distribusi Data Mahasiswa")
     st.markdown("""
 
 Memberikan gambaran umum mengenai komposisi dan karakteristik awal data mahasiswa.
@@ -52,7 +53,7 @@ Memberikan gambaran umum mengenai komposisi dan karakteristik awal data mahasisw
 
 # ========== MENU 2 ==========
 elif menu == "2. Tren Risiko Dropout per Fitur":
-    st.title("📉 2. Tren Risiko Dropout per Fitur")
+    st.title("📉 Tren Risiko Dropout per Fitur")
     st.markdown("""
 
  Menelusuri hubungan antara nilai fitur tertentu dan kemungkinan dropout berdasarkan observasi di dataset.
@@ -92,7 +93,7 @@ elif menu == "2. Tren Risiko Dropout per Fitur":
 
 # ========== MENU 3 ==========
 elif menu == "3. Visualisasi Faktor Dropout":
-    st.title("📈 3. Visualisasi Faktor Dropout")
+    st.title("📈 Visualisasi Faktor Dropout")
     st.markdown("""
 
 Menyajikan visualisasi mendalam dari fitur-fitur yang berpengaruh besar pada prediksi dropout.
@@ -127,7 +128,7 @@ Menyajikan visualisasi mendalam dari fitur-fitur yang berpengaruh besar pada pre
 
 # ========== MENU 4 ==========
 elif menu == "4. Daftar Mahasiswa Aktif Berisiko":
-    st.title("📋 4. Daftar Mahasiswa Aktif Berisiko Dropout")
+    st.title("📋 Daftar Mahasiswa Aktif Berisiko Dropout")
     st.markdown("""
                 
 Menampilkan mahasiswa **Enrolled** dengan risiko dropout tertinggi berdasarkan hasil prediksi model.
@@ -161,7 +162,7 @@ Menampilkan mahasiswa **Enrolled** dengan risiko dropout tertinggi berdasarkan h
 
 # ========== MENU 5 ==========
 elif menu == "5. Prediksi Manual Mahasiswa Aktif":
-    st.title("🧠 5. Prediksi Manual untuk Mahasiswa Aktif")
+    st.title("🧠 Prediksi Manual untuk Mahasiswa Aktif")
     st.markdown("""
 
 Simulasikan prediksi risiko dropout berdasarkan input karakteristik mahasiswa aktif.

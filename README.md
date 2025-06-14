@@ -1,4 +1,4 @@
-# 🎓 Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech  
+# 🎓 Proyek Akhir: Menyelesaikan Permasalahan Institusi Pendidikan  
 **Jaya Jaya Institute – Analisis & Visualisasi Prediktif**
 
 ---
@@ -142,7 +142,7 @@ Membuka dan menjalankan Terminal VS Code.
 Lalu jalankan aplikasi Streamlit:
 
 ```bash
-streamlit run dashboard.py
+streamlit run app.py
 ```
 
 Aplikasi akan terbuka otomatis di browser pada alamat: [http://localhost:8501](http://localhost:8501)

@@ -137,6 +137,7 @@ Dan tunggu hingga seluruh proses selesai.
 
 ## 🚀 Jalankan Aplikasi Streamlit
 
+### Akses Secara Lokal
 Membuka dan menjalankan Terminal VS Code.
 
 Lalu jalankan aplikasi Streamlit:
@@ -146,6 +147,11 @@ streamlit run app.py
 ```
 
 Aplikasi akan terbuka otomatis di browser pada alamat: [http://localhost:8501](http://localhost:8501)
+
+
+### Akses Secara Remote/Online
+
+Proyek ini dapat dijalankan secara remote/online dengan tautan berikut: [project-solving-educational-institution-problems-08samudra](https://project-solving-educational-institution-problems-08samudra.streamlit.app/)
 
 ---
 
